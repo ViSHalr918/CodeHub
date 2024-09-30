@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block main_block%}
+
+<form class="container border border-4 w-1/2 mt-3 mx-auto p-5" action="" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    {{form}}
+    <button class="border p-2 bg-#042f2e  rounded-md" type="submit">Confirm</button>
+</form>
+
+{%endblock%}
